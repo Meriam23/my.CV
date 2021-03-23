@@ -1,267 +1,509 @@
 body {
   background-color: black;
   font-family: 'Raleway', sans-serif;
-  color: white;
+  scroll-behavior: smooth;
 }
 
-.navsection {
-  background-color: black;
-}
-.navbrand-text {
-  font-size: 2rem;
-  padding-top: 15px;
-}
-
-.navbar-text{
-  padding-top: 20px;
-  font-size: 1.5rem;
-}
-
-.dessin {
-    width: 200px;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin-top: 30px;
-
-}
-
-h1 {
-  font-size: 3.5rem;
-  font-weight: 500;
-  font-family: 'Lobster', cursive;
-}
-h2 {
-  font-size: 2rem;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.drawing-div {
-  text-align: center;
-  margin: auto;
-  padding-left: 40px;
-  padding-bottom: 30px;
-
-}
-
-.description-div {
-  text-align: center;
-  margin: auto;
-  padding-bottom: 50px;
-
-}
-
-.section1 {
-  background-color: black;
-  margin-bottom: 50px;
-  padding-top: 160px;
-
-
-}
-
-.section2 {
-  padding-top: 50px;
-  text-align: center;
-  color: white;
-  padding-bottom: 50px;
-}
-
-.london {
-  width: 400px;
-  margin-bottom: 10px;
-}
-
-.section3 {
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-.section3div {
-  background-color: white;
-  color: black;
-  padding-top: 120px;
-  padding-bottom: 50px;
-}
-
-.profilpic {
-
-  width: 275px;
-  border-radius: 50%;
-  border: 2px solid black;
-  margin-top: 30px;
-  margin-bottom: 40px;
-
-}
-
-.hellothere {
-  font-size: 2.5rem;
-  font-family: 'Lobster', cursive;
-  margin-bottom: 10px;
-}
-
-.section3p {
-  padding: 20px;
-  font-size: 1.15rem;
-  border: 1px solid silver;
-  box-shadow: 5px 10px grey;
-  border-radius: 10px;
-  text-align: left;
-  margin-bottom: 80px;
-  background-color: white;
-  color: black;
-
-}
-
-.section3p p {
-  display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
-.languages {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 200px;
-  font-size: 1.2rem;
-  background-color: white;
-  color: black;
+@import 'https://fonts.googleapis.com/css?family=Overlock:400,400i,700|Oleo+Script';
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
 }
 
-#languages1 {
-  font-family: 'Lobster', cursive;
-  font-size: 2rem;
-  padding-bottom: 35px;
+button {
+  cursor: pointer;
 }
 
-
-
-.footer-bottom {
-  padding-top: 10px;
+.blackDiv {
+  height: 10vh;
   width: 100%;
-  text-align: center;
-
-}
-
-.insta {
-  width: 35px;
-}
-
-.facebook {
-  width: 45px;
-}
-
-.computing {
-  width: 245px;
-  margin: auto;
-  border-radius: 5%;
-}
-
-.sherlock {
-  border-radius: 5%;
-  width: 220px;
-}
-
-.kindness {
-  width: 245px;
-  border-radius: 5%;
-}
-
-.chocolate {
-  width: 220px;
-}
-
-.skillscol {
-  text-align: justify;
-  padding-bottom: 50px;
-}
-
-.skillscol p{
-  padding-left: 20px;
-  padding-right: 40px;
-}
-
-.imgh3 {
-  text-align: center;
-  padding-bottom: 60px;
-}
-
-.arrow {
-  margin-top: 75px;
-}
-
-
-.section4 {
-  background-color: white;
-  color: black;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  font-size: 1.25rem;
-}
-
-.section4 h3 {
-  font-size: 2rem;
-}
-
-.fa-envelope {
-  transform: scale(3);
-  color: black;
-  margin-bottom: 40px;
-  margin-top: 20px;
-
-}
-
-
-
-#skillstitle {
-  padding-bottom: 100px;
-  font-family: 'Lobster', cursive;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.inbetween {
-  height: 10px;
-  background-color: white;
-}
-
-.contactP {
-  text-align: left;
-}
-
-.contact-me p {
-  display: inline-block;
-}
-
-
-.portfoliopics {
-  width: 375px;
-}
-
-.inbetween2 {
-  height: 100px;
   background-color: black;
-}
-
-.inbetween3 {
-  height: 100px;
-  background-color: white;
+  position: absolute;
+  bottom: 0;
 }
 
 
-.portfoliotitle {
-  font-family: 'Lobster', cursive;
-  font-size: 2rem;
+
+#welcome-section {
+  background: #202736;
+  background: linear-gradient(to bottom, #181d23 0%, #202736 80%);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  margin: 0 auto;
+  z-index: -10;
+
+}
+
+#welcome-section::before {
+  content: '';
+  position: fixed;
+  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  opacity: 0;
+  animation: stars-move-in 1000ms 300ms forwards;
+}
+
+@keyframes stars-move-in {
+  from {
+    background-position-y: -100px;
+  }
+  to {
+    opacity: 1;
+    background-position-y: 0;
+  }
+}
+
+.meriamText {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  color: white;
+  font-size: 60px;
+  font-weight: 100;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 0px 0px 5px #f300b4, 0 0 3px #f300b4;
+}
+
+.avatar {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 150px;
+  position: fixed;
+  z-index: -2;
+  left: 9rem;
+  top: 12rem;
+  box-shadow: 0px 0px 10px #f300b4;
+}
+
+
+#womanImg {
+  position: absolute;
+  bottom: 3rem;
+  right: 50%;
+  opacity: 0;
+  width: 400px;
+  animation: silhouette-move-in 1000ms 800ms forwards;
+  z-index:1;
+}
+
+@keyframes silhouette-move-in {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    opacity: 1;
+    background-position-x: 50%;
+  }
+}
+
+#moonImg {
+  top: 15%;
+  right: 10%;
+  position: fixed;
+  width: 20%;
+  height: 15%;
+  z-index: -2;
+  opacity: 0;
+  animation: moon-move-in 1.2s 1s forwards;
+
+}
+
+@keyframes moon-move-in {
+  from {
+    opacity: 0;
+    background-position: right 150%;
+  }
+  to {
+    opacity: 1;
+    background-position: top right;
+  }
+}
+
+#scrollDiv {
+  color: silver;
+  font-size: 40px;
+  line-height: 1;
+  position: absolute;
+  bottom: 8rem;
+  right: 6rem;
   text-align: center;
-  padding-bottom: 75px;
+  text-shadow: 0px 0px 5px #111f28, 0 0 3px #f300b4;
 }
 
-.portfolio-col {
+.welcomeText {
+  text-shadow: 5px 5px 5px #111f28, 5px 5px 5px #f300b4;
+  font-size: 35px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+.title {
+  color: white;
+  text-shadow: 0px 0px 5px #111f28, 0 0 3px #f300b4;
+}
+
+.bottom-title {
+  font-size: 25px;
+}
+
+.pink-text {
+  color: #f300b4;
+  text-shadow: 0px 0px 5px #111f28, 0 0 5px #f300b4;
+}
+
+#about {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  font-size: 1rem;
+  position: relative;
+  background: #000;
+  z-index: 100;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+.wrapper {
+  font-family: 'Overlock', Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+}
+
+.slideCol {
+  width: 100vw;
+  position: absolute;
+  overflow-y: hidden;
+  top: 0;
+  font-size: 1.5rem;
+  background-color: black;
   text-align: center;
-  padding-bottom: 75px;
+  line-height: 1.7;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+
+.portfolioCol {
+  left: 100vw;
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  color: #FFE81F;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 300%;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+  background: black url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
+  overflow-x: hidden;
+
+}
+
+.arrow-right {
+  position: absolute;
+  right: 10px;
+  top: 20rem;
+  color: white;
+  text-shadow: 0px 0px 3px #FFE81F, 0 0 3px #FFE81F;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.crawl {
+  position: relative;
+  top: 99999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear infinite;
+}
+
+.crawl:hover {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    animation: crawl 60s linear;
+}
+
+.bigTitle {
+  font-size: 130%;
+  text-align: center;
+  margin-top: 200px;
+}
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+}
+
+@keyframes crawl {
+  0% {
+    top: -100px;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+.marvel-logo {
+  background-color: black;
+  padding: 2rem;
+}
+
+.marvel-img {
+  transform: scale(0.7);
+}
+
+.blackScreen {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 100vh;
+  color: white;
+  overflow-y: scroll;
+  padding: 3rem;
+  padding-bottom: 20rem;
+  background: black url(images/marvel-background2.png) center right no-repeat;
+  background-attachment: fixed;
+}
+
+
+.portfolioImg {
+  width: 600px;
+  border: 1px solid silver;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px #fafafa;
+  border-left: none;
+  border-top: none;
+}
+
+.spiderman {
+  width: 70px;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: 5;
+}
+
+.ironMan {
+  width: 250px;
+  position: absolute;
+  bottom: -10px!important;
+  left: 15%;
+}
+
+.arrowMarvel {
+  width: 50px;
+  right: 10px;
+  top: 20rem;
+  color: white;
+  position: absolute;
+  text-shadow: 0px 0px 3px #FFE81F, 0 0 3px #FFE81F;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.portfolioText {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-decoration: overline underline;
+  text-underline-offset: 5px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.scrollImg {
+  position: absolute;
+  top: 1rem;
+  left: 5rem;
+}
+
+.shieldImg {
+  width: 180px;
+  z-index: 5;
+}
+
+.contactCol {
+  left: 200vw;
+  background: url(images/harrypotterbackground.jpeg) center top no-repeat;
+  overflow: hidden;
+  z-index: -10;
+}
+
+.contactCol i {
+  margin-right: 25px;
+  transform: scale(1.5);
+}
+
+.wantedDiv {
+  margin-top: 4rem;
+}
+.wanted {
+  margin: auto;
+  width: 400px;
+}
+
+
+.contactText {
+  padding: 3rem;
+  color: white;
+  margin: auto;
+  background: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.6);
+  font-size: 20px;
+
+}
+
+.contactTitle {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.whiteSpace {
+  height: 5rem;
+  background-color: black;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.mainBtn {
+  color: white;
+  transform: scale(2.5);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 2px;
+  z-index: 10000;
+}
+
+.textBtn {
+  margin-top: 0.25rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 0px 0px 5px #f300b4, 0 0 3px #f300b4;
+}
+
+.mainBtn:hover {
+  text-shadow: 0 0 5px #f300b4;
+  transform: scale(2.7);
+}
+
+.hp-arrow {
+  width: 80px;
+  right: 20px;
+  top: 21rem;
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+
+.languagesCol {
+  left: 300vw;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background: black url(images/rivendelCastle.jpeg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+}
+
+.lotrBack {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  width: 100vw;
+  text-shadow: 0 5px 5px white;
+  z-index: 10;
+}
+
+.ringLOTR {
+  width: 300px;
+  margin-top: 50px;
+  opacity: 0.4;
+}
+
+.lotrTitle {
+  width: 230px;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.lotrDiv {
+  z-index: 10;
+}
+.languagesScroll {
+  color: #AB8D5A;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 5px white;
+  height: 100vh;
+  margin: auto;
+  width: 75%;
+  position: relative;
+  bottom: 20rem;
+  border-radius: 15px;
+  padding: 5rem;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding-bottom: 20rem;
+  text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+}
+
+
+.leftArrow {
+  position: absolute;
+  left: 10px;
+  transform: scaleX(-1);
+}
+
+.arrowLOTR {
+  width: 100px;
+  position: absolute;
+
+}
+
+.lotrLeft {
+  left: 0;
 }
