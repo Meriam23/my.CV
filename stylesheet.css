@@ -439,6 +439,7 @@ button {
 .hpBlack {
   position: absolute;
   bottom: 3rem;
+  left: 4rem;
   z-index: 2000;
   height: 200px;
 }
