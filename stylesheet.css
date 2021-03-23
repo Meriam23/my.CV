@@ -472,21 +472,21 @@ button {
 }
 .languagesScroll {
   color: #AB8D5A;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 5px white;
+  background: rgba(0,0,0,0.3);
+  box-shadow: 0 5px 10px black;
   height: 100vh;
   margin: auto;
   width: 75%;
   position: relative;
   bottom: 20rem;
-  border-radius: 15px;
+  border-radius: 300px;
   padding: 5rem;
   text-transform: uppercase;
-  font-size: 25px;
+  font-family: 'Overlock', Arial, Helvetica, sans-serif;
+  font-size: 30px;
   padding-bottom: 20rem;
   text-shadow:
-        0.07em 0 black,
-        0 0.07em black,
+
         -0.07em 0 black,
         0 -0.07em black;
 }
