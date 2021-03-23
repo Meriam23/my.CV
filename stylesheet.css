@@ -318,6 +318,7 @@ button {
   position: absolute;
   bottom: -10px!important;
   left: 15%;
+  z-index: 11000;
 }
 
 .arrowMarvel {
