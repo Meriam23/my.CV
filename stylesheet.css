@@ -479,18 +479,23 @@ button {
   width: 75%;
   position: relative;
   bottom: 20rem;
-  border-radius: 300px;
-  padding: 5rem;
+  border-radius: 60px 60px;
+  padding: 6rem;
   text-transform: uppercase;
   font-family: 'Overlock', Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   padding-bottom: 20rem;
+  text-align: left;
   text-shadow:
-
         -0.07em 0 black,
         0 -0.07em black;
+  padding-top: 7rem;
 }
 
+.languagesScroll .first {
+  text-align: right;
+  font-size: 25px;
+}
 
 .leftArrow {
   position: absolute;
