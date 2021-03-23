@@ -7,3 +7,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+var scrollpos = window.scrollY; 
+var wh = window.innerHeight-50; 
+var element = document.querySelector(".crawl"); 
+
+window.addEventListener('scroll', function(){
+    if(scrollpos > (element.offsetTop - wh)){
+        element.classList.add("onScroll");
+    }
+});
+
