@@ -465,7 +465,7 @@ button {
   margin: 0;
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   padding-bottom: 4rem;
@@ -503,7 +503,7 @@ button {
 }
 .wantedDiv {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 }
 
@@ -576,9 +576,7 @@ button {
 
 .languagesCol {
   left: 300vw;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  background: black url(images/rivendelCastle.jpeg) center no-repeat;
+  background: black url(images/rivendelCastle.jpeg) center top no-repeat;
   background-size: cover;
   background-attachment: fixed;
   opacity: 1;
@@ -610,45 +608,47 @@ button {
 
 
 .lotrTitle {
-  margin: auto;
-  position: relative;
-  top: 10%;
+  margin-top: 10%;
   width: 60%;
   max-width: 230px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 
 .languagesScroll {
   color: #AB8D5A;
-  width: 75%;
+  width: 100%;
   margin: 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   border-radius: 60px 60px;
-  padding: 2rem;
   text-transform: uppercase;
   font-family: 'Overlock', Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 27px;
   text-align: center;
   text-shadow:
         -0.07em 0 black,
         0 -0.07em black;
+  background: rgba(0,0,0,0.1);
+  padding: 1rem;
 }
 
 
 
 .leftArrow {
   position: absolute;
-  left: 10px;
+  left: 5px;
   transform: translateY(-50%);
 }
 
 .arrowLOTR {
   width: 100px;
   position: absolute;
-
 }
 
 .lotrLeft {
