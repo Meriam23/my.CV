@@ -162,8 +162,6 @@ button {
   }
   .star-wars {
     font-weight: 300;
-    margin-right: 2rem;
-    margin-left: 2rem;
   }
 }
 
@@ -269,14 +267,14 @@ button {
   top: 99999px;
   transform-origin: 50% 100%;
   animation: crawl 60s linear infinite;
-  animation-delay: 2s;
+  animation-play-state: paused;
 }
 
 .crawl:hover {
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
-    animation: crawl 60s linear;
+  animation-play-state: running;
 }
+
+
 
 .bigTitle {
   font-size: 130%;
@@ -568,48 +566,42 @@ button {
   z-index: 10;
 }
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:768px) {
   .lotrBack {
     width: 160%;
   }
 }
 
-.ringLOTR {
-  width: 300px;
-  margin-top: 50px;
-  opacity: 0.4;
-}
 
 .lotrTitle {
-  width: 230px;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
+  margin: auto;
+  position: relative;
+  top: 10%;
+  width: 60%;
+  max-width: 230px;
 }
 
-.lotrDiv {
-  z-index: 10;
-}
+
 .languagesScroll {
   color: #AB8D5A;
-  margin: auto;
   width: 75%;
-  position: relative;
-  bottom: 17rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   border-radius: 60px 60px;
   padding: 2rem;
   text-transform: uppercase;
   font-family: 'Overlock', Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  text-align: left;
+  font-size: 30px;
+  text-align: center;
   text-shadow:
         -0.07em 0 black,
         0 -0.07em black;
 }
 
-.languagesScroll .first {
-  text-align: right;
-  font-size: 25px;
-}
+
 
 .leftArrow {
   position: absolute;
