@@ -492,7 +492,7 @@ button {
   }
 }
 
-
+@media only screen and (max-width: 768px) {
 
 .contactText {
   position: absolute;
@@ -504,6 +504,7 @@ button {
 .wantedDiv {
   margin: auto;
   margin-top: 50px;
+}
 }
 
 .whiteSpace {
