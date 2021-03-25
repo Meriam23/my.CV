@@ -78,7 +78,6 @@ button {
   font-weight: 100;
   font-family: 'Press Start 2P', cursive;
   text-shadow: 0px 0px 5px #f300b4, 0 0 3px #f300b4;
-  background: rgba(0,0,0,0.1);
   height: 100vh;
 }
 
@@ -153,7 +152,7 @@ button {
   text-shadow: 0px 0px 5px #111f28, 0 0 3px #f300b4;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   #scrollDiv {
     left: 0;
   }
@@ -162,6 +161,11 @@ button {
   }
   .star-wars {
     font-weight: 300;
+  }
+  .avatar {
+    margin: 0;
+    position: absolute;
+    left: 30%;
   }
 }
 
@@ -351,14 +355,24 @@ button {
   z-index: 11000;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .ironMan {
     left: 0;
-    bottom: 5%;
+    bottom: 10%;
     width: 30%;
   }
   .shieldImg {
     display: none;
+  }
+  .welcomeText {
+    bottom: 10rem;
+  }
+  .crawl {
+    animation-delay: 5s;
+    animation-play-state: running;
+  }
+  .crawl:hover {
+    animation-play-state: paused;
   }
 }
 
@@ -458,26 +472,32 @@ button {
   margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 768px) {
-  .contactText {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  .wantedDiv {
-    margin-top: 50px;
-  }
+@media only screen and (max-width: 1024px) {
+
   .hpBlack2 {
     -ms-transform: translateX(33%);
     transform: translateX(33%);
+    bottom: 10%;
   }
   .hpBlack {
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     left: 0!important;
   }
+}
+
+@media only screen and (max-width: 576px) {
+
+.contactText {
+  position: absolute;
+  margin-top: 2rem;
+  top: 20%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.wantedDiv {
+  margin: auto;
+  margin-top: 50px;
 }
 
 .whiteSpace {
