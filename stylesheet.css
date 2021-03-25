@@ -78,7 +78,7 @@ button {
   font-weight: 100;
   font-family: 'Press Start 2P', cursive;
   text-shadow: 0px 0px 5px #f300b4, 0 0 3px #f300b4;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.1);
   height: 100vh;
 }
 
