@@ -172,7 +172,7 @@ button {
   #womanImg {
     left: 5rem;
     z-index: 0;
-    bottom: 4rem;
+    bottom: 8rem;
   }
 }
 
@@ -372,7 +372,7 @@ button {
     display: none;
   }
   .welcomeText {
-    bottom: 10rem;
+    bottom: 13rem;
   }
   .crawl {
     animation-delay: 5s;
